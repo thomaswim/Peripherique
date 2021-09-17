@@ -392,6 +392,13 @@
         </Group>
         <Group>
           <GroupName>Mes drivers</GroupName>
+          <Files>
+            <File>
+              <FileName>Driver_GPIO.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mes drivers\sources\Driver_GPIO.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>::CMSIS</GroupName>
@@ -734,7 +741,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\Include</IncludePath>
+              <IncludePath>.\Include;..\Mes drivers\include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -787,6 +794,13 @@
         </Group>
         <Group>
           <GroupName>Mes drivers</GroupName>
+          <Files>
+            <File>
+              <FileName>Driver_GPIO.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mes drivers\sources\Driver_GPIO.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>::CMSIS</GroupName>

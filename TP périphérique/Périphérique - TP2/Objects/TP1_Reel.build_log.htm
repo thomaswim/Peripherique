@@ -22,17 +22,26 @@ Dialog DLL:      TARMSTM.DLL V1.66.0.0
  
 <h2>Project:</h2>
 U:\TP périphérique\Périphérique - TP2\TP2.uvprojx
-Project File Date:  09/16/2021
+Project File Date:  09/17/2021
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Rebuild target 'Réel'
 assembling startup_stm32f10x_md.s...
 compiling Principal.c...
+Source\Principal.c(19): warning:  #223-D: function "MyGPIO_Read" declared implicitly
+  	marcel = MyGPIO_Read ( GPIOA ,11 ); 
+Source\Principal.c(9): warning:  #550-D: variable "marcel"  was set but never used
+  	int marcel ;
+Source\Principal.c: 2 warnings, 0 errors
 compiling system_stm32f10x.c...
+compiling Driver_GPIO.c...
+..\Mes drivers\include\Driver_GPIO.h(27): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Mes drivers\sources\Driver_GPIO.c: 1 warning, 0 errors
 linking...
-Program Size: Code=556 RO-data=252 RW-data=0 ZI-data=1024  
-".\Objects\TP1_Reel.axf" - 0 Error(s), 0 Warning(s).
+Program Size: Code=552 RO-data=252 RW-data=0 ZI-data=1024  
+".\Objects\TP1_Reel.axf" - 0 Error(s), 3 Warning(s).
 
 <h2>Software Packages used:</h2>
 
