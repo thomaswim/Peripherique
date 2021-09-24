@@ -8,11 +8,13 @@
 	char GPIO_Conf ; // v o i r c i de s sou s
 } MyGPIO_Struct_TypeDef ;
 
-#define In_Floating 0x01 // a comple te r
+
+// A modifier !!
+#define In_Floating 0x04 // a comple te r
 #define In_PullDown 0x02 // a comple te r
 #define In _PullUp 0x02 // a comple te r
 #define In_Analog 0x00 // a comple te r
-#define Out_Ppull 0x04 // a comple te r
+#define Out_Ppull 0x01 // a comple te r
 #define Out_OD 0x05// a comple te r
 #define AltOut_Ppull 0x06 // a comple te r
 #define AltOut_OD 0x07 // a comple te r
@@ -25,3 +27,5 @@ void MyGPIO_Set ( GPIO_TypeDef * GPIO , char GPIO_Pin ) ;
 void MyGPIO_Reset ( GPIO_TypeDef * GPIO , char GPIO_Pin ) ;
 void MyGPIO_Toggle ( GPIO_TypeDef * GPIO , char GPIO_Pin ) ;
 #endif
+
+
